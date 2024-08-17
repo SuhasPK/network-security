@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import pymongo
 
-from network_security.exception.execption import Network_Security_Exception
+from network_security.exception.exception import NetworkSecurityException
 from network_security.logger.logger import logging
 
 class network_data_extraction():
@@ -17,7 +17,7 @@ class network_data_extraction():
         try:
             pass
         except Exception as e:
-            raise Network_Security_Exception(e,sys)
+            raise NetworkSecurityException(e,sys)
         
     def csv_tojoin_converter(self):
         try:
